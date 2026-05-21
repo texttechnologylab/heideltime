@@ -5,6 +5,7 @@
 // This file contains regular expression patterns for adjectival unit words as used in compounds.
 // FORMAT: one line is one disjunction of the pattern
 [Jj]ährig
+[Mm]onatig
 [Ww]öchig
 [Tt]ägig
 [Ts]tündig

@@ -192,7 +192,7 @@ RULENAME="date_r14a",EXTRACTION="(Jahr[es]* )?%reYear4Digit",NORM_VALUE="group(2
 RULENAME="date_r15a",EXTRACTION="%reYear4Digit%reAndOrTo%reYear2Digit",NORM_VALUE="%SUBSTRING%(group(1),0,2)group(3)",OFFSET="group(3)-group(3)"
 
 // date_r16
-// EXAMPLE r16a_1: neunzehnsechsundneuzig
+// EXAMPLE r16a_1: neunzehnsechsundneunzig
 RULENAME="date_r16a",EXTRACTION="%reNumWordTeen[ -]?%reNumWord2D",NORM_VALUE="%normDurationNumber(group(1))%normDurationNumber(group(2))"
 
 /////////////////////////
@@ -200,7 +200,8 @@ RULENAME="date_r16a",EXTRACTION="%reNumWordTeen[ -]?%reNumWord2D",NORM_VALUE="%n
 /////////////////////////
 // date_r17
 // EXAMPLE r17a_1: Das 20. Jahrhundert
-// EXAMPLE r17b_1: Im 18. und 19. Jahrhundert | find: 17. Jahrhundert
+// EXAMPLE r17b_1: Im 18. und 19. Jahrhundert
+// EXAMPLE r17b_1: das 17. Jahrhundert
 // EXAMPLE 2: the seventh century
 RULENAME="date_r17a",EXTRACTION="([Ii]m |[Dd]as )?(%reDayNumber[\.]?|%reDayWordTh) Jahrhundert[s]?",NORM_VALUE="%normDay(%SUM%(%normDay(group(2)),-1))"
 RULENAME="date_r17b",EXTRACTION="([Ii]m |[Dd]as )?(%reDayNumber[\.]?|%reDayWordTh)%reAndOrTo(%reDayNumber[\.]?|%reDayWordTh) Jahrhundert[s]?",NORM_VALUE="%normDay(%SUM%(%normDay(group(2)),-1))",OFFSET="group(2)-group(2)"

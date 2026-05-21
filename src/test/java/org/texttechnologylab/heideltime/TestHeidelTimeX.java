@@ -106,7 +106,7 @@ public class TestHeidelTimeX {
             "Jahr 2009", // EXAMPLE r14a_2
             "1850-58", // EXAMPLE r15a_1: (find: 1858)
             "1850/51", // EXAMPLE r15a_2: (find: 1851)
-            // "neunzehnsechsundneuzig", // EXAMPLE r16a_1  // FIXME: Not Working!
+            "neunzehnsechsundneunzig", // EXAMPLE r16a_1
             "Das 20. Jahrhundert", // EXAMPLE r17a_1
             "Im 18. und 19. Jahrhundert", // EXAMPLE r17b_1: (find: 17. Jahrhundert)
             "das 17. Jahrhundert", // EXAMPLE 2
